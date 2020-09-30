@@ -19,30 +19,29 @@ html, body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;background-position: center;
-    background-attachment: fixed;
+    align-items: center;
+}
 
+.pic1, .pic2, .pic3 {
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .site {
     letter-spacing: 6px;
-    padding: 20px 0 20px 20px;
-    width: 26%;
+    padding: 20px;
+    text-align: center;
     font-size: 1.9em;
 }
 
 .pic2 {
     background-image: url(img/img2.jpg);
     height: 400px;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .pic3 {
     background-image: url(img/img3.jpg);
     height: 400px;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .sec {
@@ -62,12 +61,15 @@ html, body {
 
 footer {
     display: flex;
-    height: 200px;
     text-align: center;
 }
 
 footer h2 {
-    padding: 30px;
+    padding: 50px 50px 30px;
+}
+
+footer p {
+    padding: 0 50px 30px;
 }
 
 .left {
@@ -80,4 +82,22 @@ footer h2 {
     width: 50%;
     background-color: #080808;
     color: white;
+}
+
+@media (max-width: 540px) {
+    footer {
+        display: block;
+    }
+
+    .right, .left {
+        width: 100%;
+    }
+
+    .sec {
+        padding: 25px;
+    }
+
+    footer p {
+        padding: 0 25px 30px;
+    }
 }
